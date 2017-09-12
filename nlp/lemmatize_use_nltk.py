@@ -22,7 +22,3 @@ def lemmatize_sentence(sentence):
         wordnet_pos = get_wordnet_pos(pos) or wordnet.NOUN
         res.append(lemmatizer.lemmatize(word, pos=wordnet_pos))
     return res
-#
-res = lemmatize_sentence("working")
-print type(res)
-print res
